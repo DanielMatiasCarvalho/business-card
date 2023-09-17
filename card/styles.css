@@ -1,0 +1,49 @@
+body {
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@keyframes ani {
+    from {background: black;
+          color: black;}
+    to {background: #e5e5e5;
+        color: #2b2839;}
+}
+
+@keyframes img {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 5px solid #000814;
+    background: #e5e5e5;
+    color: #2b2839;
+    animation-name: ani;
+    animation-duration: 2s;
+}
+
+.text {
+    padding-top: 17px;
+}
+
+.text:hover {
+    transform: scale(1.02);
+}
+
+.face-img {
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: img;
+    animation-duration: 2s;
+}
+
+.face-img:hover {
+    transform: scale(1.02);
+}
